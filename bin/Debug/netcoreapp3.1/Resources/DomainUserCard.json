@@ -1,0 +1,44 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "medium",
+      "weight": "bolder",
+      "text": "Domain",
+      "horizontalAlignment": "center"
+    },
+    {
+      "type": "TextBlock",
+      "text": "To which category does this user belong?"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "Domain",
+      "style": "compact",
+      "value": "@student.hogent.be",
+      "choices": [
+        {
+          "title": "Student (@student.hogent.be)",
+          "value": "@student.hogent.be"
+        },
+        {
+          "title": "Werknemer (@hogent.be)",
+          "value": "@hogent.be"
+        },
+        {
+          "title": "Avondschool (@avondschool.hogent.be)",
+          "value": "@avondschool.hogent.be"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ]
+}

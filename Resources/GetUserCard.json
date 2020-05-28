@@ -1,0 +1,64 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://lh3.googleusercontent.com/proxy/NQ2WWl2qKu9JpA8zxRgIEDgdOC6M-B9gURY-YCFW4hPCHUHR8AM-yPlhT2HALoVcd-y8WqirrS13SUBzvWNKTv9Mx7CUe8QK2TktEg1CLhGv012f8Xs",
+              "size": "Small",
+              "style": "Person"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{displayName}",
+              "weight": "Bolder",
+              "wrap": true,
+              "spacing": "Medium",
+              "horizontalAlignment": "Left"
+            }
+          ],
+          "verticalContentAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "User ID:",
+          "value": "{id}"
+        },
+        {
+          "title": "User principal name:",
+          "value": "{userPrincipalName}"
+        },
+        {
+          "title": "Job title:",
+          "value": "{jobTitle}"
+        },
+        {
+          "title": "Department:",
+          "value": "{department}"
+        },
+        {
+          "title": "Phone Number:",
+          "value": "{phoneNumber}"
+        }
+      ]
+    }
+  ]
+}

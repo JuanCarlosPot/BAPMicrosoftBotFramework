@@ -1,0 +1,41 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "medium",
+      "weight": "bolder",
+      "text": "Remove user",
+      "horizontalAlignment": "center"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Are you sure you want to remove the user: {UserPrincipalName}",
+      "wrap": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "SingleSelectVal",
+      "style": "expanded",
+      "value": "1",
+      "choices": [
+        {
+          "title": "No",
+          "value": "1"
+        },
+        {
+          "title": "Yes",
+          "value": "2"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ]
+}

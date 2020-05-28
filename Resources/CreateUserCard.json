@@ -1,0 +1,96 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "medium",
+      "weight": "bolder",
+      "text": "Create User",
+      "horizontalAlignment": "center"
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Given name",
+      "style": "text",
+      "maxLength": 0,
+      "id": "GivenName"
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Surname",
+      "style": "text",
+      "maxLength": 0,
+      "id": "SurName"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "Department",
+      "style": "compact",
+      "value": "IT",
+      "choices": [
+        {
+          "title": "IT",
+          "value": "IT"
+        },
+        {
+          "title": "Sales",
+          "value": "Sales"
+        },
+        {
+          "title": "HR",
+          "value": "HR"
+        }
+      ]
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Job Title",
+      "style": "email",
+      "maxLength": 0,
+      "id": "JobTitle"
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Phone",
+      "style": "tel",
+      "maxLength": 0,
+      "id": "PhoneNumber"
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "Temporary Password",
+      "style": "tel",
+      "maxLength": 0,
+      "id": "Password"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "Domain",
+      "style": "compact",
+      "value": "@student.hogent.be",
+      "choices": [
+        {
+          "title": "Student (@student.hogent.be)",
+          "value": "@student.hogent.be"
+        },
+        {
+          "title": "Werknemer (@hogent.be)",
+          "value": "@hogent.be"
+        },
+        {
+          "title": "Avondschool (@avondschool.hogent.be)",
+          "value": "@avondschool.hogent.be"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ]
+}
+
